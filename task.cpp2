@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main() {
+    char min = 9, max = 0;
+    int n;
+    scanf("%d", &n);
+    while(n) {
+        char d = n % 10;
+        if(d < min) min = d;
+        if(d > max) max = d;
+        n /= 10;
+    }
+    printf("min: %d\nmax: %d\n", min, max);
+    return 0;
+}
